@@ -50,7 +50,7 @@ const Navbar = () => {
         {menuOptions.map((item) => (
           <a key={item.text} href={item.href}>{item.text}</a>
         ))}
-        <button className="primary-button">Join Us</button>
+        <button className="primary-button">Book Facility</button>
         <img src={MECLogo} alt="MEC Logo" className="nav-logo" />
       </div>
       <div className="navbar-menu-container">

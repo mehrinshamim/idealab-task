@@ -1,12 +1,12 @@
 import React from "react";
+import IdealabHome from "../../assets/IdealabHome.jpg";
 
 const About = () => {
   return (
     <div className="about-section-container" id="about">
       <div className="about-section-text-container">
-        <p className="primary-subheading">About Us</p>
         <h1 className="primary-heading">
-          MEC IDEALab
+          About MEC IDEALab
         </h1>
         <p className="primary-text">
           Established in 2022, MEC IDEALab is a collaborative initiative between AICTE 
@@ -15,11 +15,10 @@ const About = () => {
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
-          <button className="watch-video-button">Watch Video</button>
         </div>
       </div>
       <div className="about-section-image-container">
-        {/* Add your about section image here */}
+        <img src={IdealabHome} alt="IDEALab Workspace" className="about-image" />
       </div>
     </div>
   );
