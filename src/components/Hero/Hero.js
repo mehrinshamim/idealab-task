@@ -1,4 +1,5 @@
 import React from "react";
+import IdealabHome from "../../assets/IdealabHome.jpg";
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
       </div>
       <div className="home-image-section">
         <div className="home-bannerImage-container">
-          {/* Add your banner image here */}
+          <img src={IdealabHome} alt="IDEALab Home" />
         </div>
       </div>
     </div>

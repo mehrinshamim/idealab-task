@@ -12,6 +12,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import EventIcon from "@mui/icons-material/Event";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import IdealabLogo from "../../assets/IdealabLogo.png";
+import MECLogo from "../../assets/MECLogo.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -41,6 +43,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
+        <img src={IdealabLogo} alt="IDEALab Logo" className="nav-logo" />
         <h1>IDEALab</h1>
       </div>
       <div className="navbar-links-container">
@@ -48,6 +51,7 @@ const Navbar = () => {
           <a key={item.text} href={item.href}>{item.text}</a>
         ))}
         <button className="primary-button">Join Us</button>
+        <img src={MECLogo} alt="MEC Logo" className="nav-logo" />
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
